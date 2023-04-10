@@ -1,0 +1,90 @@
+:root {
+    --name-title-background-color: #020122;
+    --mission-voice-over-background-color: #c0babc;
+    --about-me-title-background-color: #ff495c;
+    --about-me-paragraph-background-color: #56666b;
+    --voice-acting-section-background-color: #ffd5c2;
+    --text-title-section-color: #41ead4;
+    --text-about-title-color: #020122;
+}
+
+
+section.row-1{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+
+}
+section.row-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.title-picture {
+    min-width: 300px;
+    max-width: 50%;
+    object-fit: cover;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.bold-title {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 12%;
+    background-color: var(--name-title-background-color);
+    min-width: 300px;
+    width: 50%;
+}
+.bold-title * {
+    /* margin-left: auto;
+    margin-right: auto; */
+    color: var(--text-title-section-color);
+    padding: 0;
+
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+li {
+    list-style-type: none;
+}
+.mission-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--mission-voice-over-background-color);
+}
+
+.about-title {
+    background-color: var(--about-me-title-background-color);
+    min-width: 300px;
+    width: 50%;
+    text-align: center;
+   
+}
+#title {
+    vertical-align: center;
+    padding-top: 3%;
+    color: var(--text-about-title-color);
+}
+.about-me {
+    background-color: var(--about-me-paragraph-background-color);
+    min-width: 300px;
+    max-width: 50%;
+
+}
+#about-me-text {
+    padding: 10px;
+    justify-content: center;
+    color: white;
+}
