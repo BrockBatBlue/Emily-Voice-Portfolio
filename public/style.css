@@ -53,7 +53,7 @@ a {
 }
 a li:hover {
     color: var(--about-me-title-background-color);
-    font-size: 30px;;
+    font-size: 30px;
 }
 .bold-title * {
     margin: 0;
@@ -66,6 +66,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     gap: 25px;
+    height: 32px; /* Hi Em, I was walking by and I added this to stop the size growing on hover */
 }
 
 li {
@@ -146,10 +147,15 @@ li {
 .audio-file {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    gap: 200px; 
+    height: 60px;
 }
 
-
+.audio-file p {
+    color: var(--name-title-background-color);
+}
 .row-4 {
     background-color: var(--mission-voice-over-background-color);
 }
@@ -157,15 +163,16 @@ li {
     background-color: var(--voice-acting-section-background-color);
 }
 footer {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 80px;
     background-color: var(--name-title-background-color);
     color: var(--text-title-section-color);
     padding: 20px 0;
+    height: 104px;
 }
+
 footer img {
     height: 40px;
 }
@@ -174,8 +181,11 @@ footer img {
     border-radius: 50px;
     margin-left: 100px;
     margin-right: 100px;
-    padding-top: 3px;
 }
-img:hover {
+
+footer img:hover {
     height: 70px;
+}
+footer ul {
+    width: 400px;
 }
