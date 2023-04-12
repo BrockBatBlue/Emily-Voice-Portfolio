@@ -7,22 +7,19 @@
     --text-title-section-color: #41ead4;
     --text-about-title-color: #020122;
 }
-
-
-section.row-1{
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+body {
+    font-family: "Nunito", sans-serif;
+    margin:0;
 }
-section.row-2 {
+
+.row-1, .row-2{
     display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+
 }
 .title-picture {
     min-width: 300px;
@@ -34,16 +31,23 @@ img {
     height: 100%;
 }
 .bold-title {
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    padding-top: 12%;
+    justify-content: center;
+    align-items: center;
     background-color: var(--name-title-background-color);
     min-width: 300px;
     width: 50%;
+    gap: 36px;
+}
+.bold-title h1 {
+    font-size: 80px;
+}
+.bold-title ul {
+    font-size: 20px;
 }
 .bold-title * {
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin: 0;
     color: var(--text-title-section-color);
     padding: 0;
 
@@ -61,8 +65,18 @@ li {
 .mission-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     background: var(--mission-voice-over-background-color);
+    padding: 50px 0;
+    gap: 20px;
+}
+.mission-section h2, .mission-section p {
+    margin: 0;
+}
+.mission-section p {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .about-title {
@@ -70,21 +84,62 @@ li {
     min-width: 300px;
     width: 50%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
    
 }
 #title {
-    vertical-align: center;
-    padding-top: 3%;
     color: var(--text-about-title-color);
 }
 .about-me {
     background-color: var(--about-me-paragraph-background-color);
     min-width: 300px;
     max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
 
 }
 #about-me-text {
-    padding: 10px;
-    justify-content: center;
     color: white;
+    max-width: 90%;
+}
+.voice-acting, .voice-over, .singing {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 50px;
+}
+.row-3, .row-4, .row-5 {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.row-3 {
+    background-color: var(--voice-acting-section-background-color);
+}
+.audio-file {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.row-4 {
+    background-color: var(--mission-voice-over-background-color);
+}
+.row-5 {
+    background-color: var(--voice-acting-section-background-color);
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: var(--name-title-background-color);
+    color: var(--text-title-section-color);
+    padding: 20px 0;
 }
