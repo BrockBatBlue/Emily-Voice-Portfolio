@@ -148,14 +148,18 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 200px; 
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
     height: 60px;
 }
 
 .audio-file p {
     color: var(--name-title-background-color);
 }
+
 .row-4 {
     background-color: var(--mission-voice-over-background-color);
 }
@@ -179,8 +183,6 @@ footer img {
 .audio-file:hover {
     background-color: var(--about-me-title-background-color);
     border-radius: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 footer img:hover {
