@@ -7,31 +7,38 @@
     --text-title-section-color: #41ead4;
     --text-about-title-color: #020122;
 }
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
 body {
     font-family: "Nunito", sans-serif;
-    margin:0;
+    margin: 0;
 }
+
 p {
     font-size: 18px;
 }
-.row-1, .row-2{
+
+.row-1,
+.row-2 {
     display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-
 }
+
 .title-picture {
     min-width: 300px;
     max-width: 50%;
     object-fit: cover;
 }
+
 img {
     width: 100%;
     height: 100%;
 }
+
 .bold-title {
     display: flex;
     flex-direction: column;
@@ -42,36 +49,42 @@ img {
     width: 50%;
     gap: 36px;
 }
+
 .bold-title h1 {
     font-size: 80px;
 }
+
 .bold-title ul {
     font-size: 20px;
 }
+
 a {
     text-decoration: none;
 }
+
 a li:hover {
     color: var(--about-me-title-background-color);
     font-size: 30px;
 }
+
 .bold-title * {
     margin: 0;
     color: var(--text-title-section-color);
     padding: 0;
-
 }
+
 ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 25px;
-    height: 32px; /* Hi Em, I was walking by and I added this to stop the size growing on hover */
+    height: 32px;
 }
 
 li {
     list-style-type: none;
 }
+
 .mission-section {
     display: flex;
     flex-direction: column;
@@ -81,13 +94,17 @@ li {
     padding: 50px 0;
     gap: 20px;
 }
-.mission-section h2, .mission-section p {
+
+.mission-section h2,
+.mission-section p {
     margin: 0;
 }
+
 .mission-section p {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .mission-section h2 {
     color: var(--name-title-background-color);
     font-size: 40px;
@@ -100,13 +117,14 @@ li {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center
-   
+    align-items: center;
 }
+
 #title {
     color: var(--text-about-title-color);
     font-size: 40px;
 }
+
 .about-me {
     background-color: var(--about-me-paragraph-background-color);
     min-width: 300px;
@@ -115,35 +133,44 @@ li {
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-
 }
+
 #about-me-text {
     color: white;
     max-width: 90%;
 }
-.voice-acting, .voice-over, .singing {
+
+.voice-acting,
+.voice-over,
+.singing {
     text-align: center;
     margin: 0;
     padding-bottom: 50px;
-    
 }
-.voice-acting, .singing, .voice-over  {
+
+.voice-acting,
+.singing,
+.voice-over {
     color: var(--about-me-title-background-color);
     font-size: 40px;
 }
+
 .singing:hover {
     color: var(--about-me-title-background-color);
 }
 
-.row-3, .row-4, .row-5 {
+.row-3,
+.row-4,
+.row-5 {
     padding: 70px 0;
     display: flex;
     flex-direction: column;
-    
 }
+
 .row-3 {
     background-color: var(--voice-acting-section-background-color);
 }
+
 .audio-file {
     display: flex;
     flex-direction: row;
@@ -163,9 +190,11 @@ li {
 .row-4 {
     background-color: var(--mission-voice-over-background-color);
 }
+
 .row-5 {
     background-color: var(--voice-acting-section-background-color);
 }
+
 footer {
     display: flex !important;
     flex-direction: row;
@@ -180,6 +209,7 @@ footer {
 footer img {
     height: 40px;
 }
+
 .audio-file:hover {
     background-color: var(--about-me-title-background-color);
     border-radius: 50px;
@@ -188,6 +218,7 @@ footer img {
 footer img:hover {
     height: 70px;
 }
+
 footer ul {
     width: 400px;
 }
